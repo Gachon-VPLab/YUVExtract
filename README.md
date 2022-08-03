@@ -20,10 +20,14 @@ YUV2PNG makes each .yuv sequence into .png/.tiff format, which consists of y000.
 > 2. After moving into cloned directory, put the .yuv file in YUV420_X/`your_yuv_name.yuv`.  
 > 3. Exeucute  
 
-- When execute, you can simply run demo.sh file.  
-- Or, run as below command  
-- $ python3 yuv2png.py `YUV_root_path` `IMG_root_path` `Bit depth` `Width` `Height` `Format(png/tiff)`  
-- More information about execution is in **demo.sh** file.   
+When execute, you can simply run demo.sh file.  
+Or, run as below command  
+$ `python3` `yuv2png.py` `YUV_root_path` `IMG_root_path` `Bit depth` `Width` `Height` `Format(png/tiff)`  
+
+For example, for 10bit YUV, if you want to extract image as .tiff file, follow below command  
+$ `python3 yuv2png.py ./YUV420_10 ./TIFF_10 10 3840 2176 tiff`  
+
+More information about execution is in **demo.sh** file.   
 
 ## Result
 - When executed, the corresponding .png/.tiff file is automatically created in `IMG_root`/`your_yuv_name`/ directory.  
